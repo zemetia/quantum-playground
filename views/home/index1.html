@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+    <form action="api/predict" method="POST">
+        {% csrf_token %}
+        <textarea name="synopsis"></textarea>
+        <button type="submit">PREDIKSI</button>
+    </form>
+</html>
