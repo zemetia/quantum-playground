@@ -13,9 +13,14 @@ Open the python venv
 venv/Scripts/activate
 ```
 
-install the required module(s)
+Install the required module(s)
 ```
 pip install requirements.txt
+```
+
+Install tailwind
+```
+python manage.py tailwind install
 ```
 
 ## Run the Program
