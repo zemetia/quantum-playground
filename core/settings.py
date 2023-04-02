@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1']
 
+TAILWIND_APP_NAME = 'views'
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 # Application definition
 
@@ -37,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tailwind',
+    'views',
     'core'
 ]
 
@@ -55,7 +60,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR + '/views/'],
+        'DIRS': [BASE_DIR + '/views/public/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
